@@ -16,7 +16,7 @@ const handleClick = () => setMenuOpen(false);
 
 
 
-const linkStyle = (path) =>
+const linkStyle = (path: string) =>
 
 `relative transition duration-300 ${
 
@@ -40,11 +40,11 @@ return (
 
 {/* Left side */}
 
-<div className="flex items-center gap-8">
+<div className="flex w-full items-center gap-8">
 
-<Link to="/" className="text-2xl md:text-4xl font-bold text-gray-900" >
+<Link to="/"  >
+<img src="/images/logo1.png" alt="" className="w-25 flex h-5 items-center object-cover"/>
 
-Vitals
 
 </Link>
 

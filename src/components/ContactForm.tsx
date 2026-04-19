@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { type FormEvent, useState } from "react";
 
 import { sendContactMessage } from "../api/contact";
 
@@ -87,7 +87,7 @@ return Object.keys(newErrors).length === 0;
 
 
 
-const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 
 e.preventDefault();
 
@@ -133,18 +133,15 @@ setMessage("");
 
 setErrors({});
 
-} catch (error) {
+} catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : "Failed to send message";
 
-setNotification({
-
-message: error.message || "Failed to send message",
-
-type: "error",
-
-});
-
-}finally{
-    setLoading(false)
+    setNotification({
+        message: errorMessage,
+        type: "error",
+    });
+} finally {
+    setLoading(false);
 }
 
 };

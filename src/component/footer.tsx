@@ -7,7 +7,9 @@ export default function Footer(){
     return(<footer className="bg-[#fafcff] px-5 mb-10 md:px-10 pt-10 mt-15">
     <section className="w-full flex flex-col lg:gap-10 gap-5 lg:flex-row lg:justify-between lg:items-start ">
         <div className="mb-4 flex-1">
-            <h1 className="text-[#005bbf] text-2xl font-bold mb-3">Vital</h1>
+          
+                <img src="/images/logo1.png" alt="" className="w-25 mb-4 flex h-5 items-center object-cover"/>
+
             <p className="text-gray-600 md:w-[80%]">Empowering health through empathetic AI. Providing accessible, data-driven healthcare management for families across the globe.</p>
         </div>
         <div  className="flex flex-col gap-5 mb-4 flex-1">
