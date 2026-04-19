@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+ font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+ .font-heading {
+ font-family: "Poppins", sans-serif;
+ }
+}
