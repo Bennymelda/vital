@@ -41,7 +41,7 @@ export default function Footer(){
         </div>
     </section>
     <hr className="text-gray-100 border mb-4 mt-5" />
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-start md:items-center md:flex-row flex-col gap-5">
         <p className="text-gray-600">© 2026 Vital. All right reserved</p>
         <div className="flex gap-5">
             <p className="text-gray-600">Privacy</p>

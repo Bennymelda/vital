@@ -5,13 +5,15 @@ import {BiFirstAid} from "react-icons/bi"
 import {BsGraphUp} from "react-icons/bs"
 import {TbBook} from "react-icons/tb"
 import Footer from "../component/footer";
+import { Link } from "react-router-dom";
 import { MdOutlineNotificationsActive, MdOutlineTimeline, MdOutlineVaccines } from "react-icons/md"
 export default function Features() {
+ 
     return(<div className="bg-[#f4f9ff] lg:px-10 px-5 mt-18">
         <header className="   pb-20 items-center flex flex-col mb-10  w-full gap-2 md:gap-5 pt-20 rounded-2xl md:rounded-4xl mt-10 bg-[#e9f3ff]">
             <h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl text-center font-heading" >Explore Our Features</h1>
             <p className="text-gray-800 text-center md:text-lg lg:w-[50%]">From daily health tasks to pregnancy tracking, Vitals supports your well-being every step of the way.</p>
-            <button className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 md:px-8 md:py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Get Started</button>
+            <Link to="/" className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 md:px-8 md:py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Get Started</Link>
         </header>
         <main>
             <section className="flex mb-10 flex-col md:flex-row justify-between w-full  ">
@@ -116,7 +118,9 @@ export default function Features() {
             <section className="flex gap-4 flex-col text-center items-center bg-gray-200 mt-20 mb-20 rounded-4xl px-4 py-20">
         <h2 className="text-2xl font-heading md:text-4xl font-semibold">Ready to start your journey?</h2>
         <p className="text-gray-800 md:w-[40%]">Start your journey today and experience a more intuitive way to manage your well-being.</p>
-        <button className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</button>
+        <Link to="/" className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer" >
+            Join Waitlist
+        </Link>
     </section>
         </main>
         <Footer />

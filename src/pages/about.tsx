@@ -5,6 +5,7 @@ import { GiBrain } from "react-icons/gi"
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import Footer from "../component/footer";
 import { PiBaby } from "react-icons/pi"
+import { Link } from "react-router-dom";
 export default function About(){
     return (<div  className="bg-[#f4f9ff] px-5 md:px-10 pt-10 mt-15 ">
     <div className=" bg-[#f4f9ff] flex flex-col md:w-full  md:flex-row md:justify-between md:items-center gap-10">
@@ -12,8 +13,8 @@ export default function About(){
             <h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl font-heading">About Vitals</h1>
             <p className="text-gray-800 md:text-lg lg:w-[70%]">Unified health tracking designed for every stage of life. From <strong className="text-[#1A73E8]">General Care</strong> to specialized <strong className="text-amber-700">Mother & Baby </strong>support.</p>
             <div className="flex gap-1 md:gap-4 flex-col lg:flex-row">
-                <button  className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 md:px-8 md:py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join WaitList</button>
-                <button  className="bg-gray-300 font-semibold mt-2 md:mt-4 md:px-8 md:py-4 px-8 py-4 rounded-4xl w-fit text-black shadow-md shadow-gray-300/30 cursor-pointer">Explore Features</button>
+                <Link to="/"  className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 md:px-8 md:py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join WaitList</Link>
+                <Link to="/features"  className="bg-gray-300 font-semibold mt-2 md:mt-4 md:px-8 md:py-4 px-8 py-4 rounded-4xl w-fit text-black shadow-md shadow-gray-300/30 cursor-pointer">Explore Features</Link>
             </div>
         </div>
         <div className="md:w-1/2">
@@ -94,7 +95,7 @@ export default function About(){
     <section className="flex gap-4 flex-col text-center items-center bg-[#d7e4fa] mb-20 rounded-4xl px-4 py-20">
         <h2 className="text-2xl font-heading md:text-4xl font-semibold">Ready to join the health revolution?</h2>
         <p className="text-gray-800 md:w-[40%]">Start your journey today and experience a more intuitive way to manage your well-being.</p>
-        <button className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</button>
+        <Link to="/" className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</Link>
     </section>
     <Footer />
 

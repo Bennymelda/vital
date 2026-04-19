@@ -10,6 +10,12 @@ import Footer from "../component/footer"
 import { BiSolidQuoteAltRight } from "react-icons/bi"
 
 export default function Home(){
+    
+const scrollToForm = () => {
+ const section = document.getElementById("waitlist");
+ section?.scrollIntoView({ behavior: "smooth" });
+};
+
 return(
     <div className="bg-[#f4f9ff] mt-5">
 <header className="flex lg:flex-row flex-col lg:px-10 items-stretch justify-between pb-20  w-full gap-10 pt-20 px-5 bg-[#f4f9ff]">
@@ -19,7 +25,7 @@ return(
     <span className="text-4xl md:text-6xl font-bold font-heading">Your Journey,</span>
     <span className="text-4xl md:text-6xl font-bold italic text-[#1A73E8] mb-4">Vitals.</span>
     <p className="w-full md:text-xl md:w-[90%] text-gray-800 leading-7 tracking-wide">Vitals is the all-in-one health companion for general care and maternal wellness. Seamlessly manage your vitals, appointments, and family milestones in one secure place.</p>
-    <button className="bg-[#005bbf] mt-4 px-6 py-2 rounded-4xl w-fit text-white shadow-lg shadow-[#005bbf]/30 cursor-pointer">Join waitList</button>
+    <button className="bg-[#005bbf] mt-4 px-6 py-2 rounded-4xl w-fit text-white shadow-lg shadow-[#005bbf]/30 cursor-pointer" onClick={scrollToForm}>Join waitList</button>
     <div className="flex items-center gap-5 mt-10">
         <div className="flex ">
             <img src="/images/baby 3.png" className="w-8  h-8 rounded-full" alt="" />

@@ -31,7 +31,10 @@ return /\S+@\S+\.\S+/.test(email);
 
 };
 
-
+const scrollToForm = () => {
+ const section = document.getElementById("waitlist");
+ section?.scrollIntoView({ behavior: "smooth" });
+};
 
 const validateForm = () => {
 
@@ -153,7 +156,7 @@ onClose={() => setNotification(null)}
 
 )}
 
-<form onSubmit={handleSubmit} className="bg-[#ffffff] mt-5 rounded-2xl md:rounded-4xl p-5 md:p-10 shadow-lg">
+<form onSubmit={handleSubmit} id="waitlist" className="bg-[#ffffff] mt-5 rounded-2xl md:rounded-4xl p-5 md:p-10 shadow-lg">
          <div className="flex w-full justify-between md:flex-row flex-col mb-6 rounded-2xl gap-5">
        <div className="flex flex-col gap-2 w-full">
         <label>Name</label>
@@ -174,7 +177,8 @@ onChange={(e) => setEmail(e.target.value)} placeholder="benn@gmail.com" classNam
         </div>
         
     </div>
-    <label>
+    <div className="flex gap-4">
+    <label className="flex gap-4 mb-5 items-center">
 
 <input
 
@@ -185,12 +189,13 @@ checked={marketingConsent}
 onChange={(e) => setMarketingConsent(e.target.checked)}
 
 />
+<span className="text-gray-700">I agree to marketing emails</span>
 
-I agree to marketing emails
 
 </label>
 {errors.marketingConsent && <p style={{ color: "red" }}>{errors.marketingConsent}</p>}
-    <button type="submit" className="bg-[#005bbf] font-bold rounded-4xl text-white w-full py-2 ">{loading ? "Processing..." : "Secure My Spot"}</button>
+</div>
+    <button type="submit" onClick={scrollToForm} className="bg-[#005bbf] font-bold rounded-4xl text-white w-full py-2 ">{loading ? "Processing..." : "Secure My Spot"}</button>
  
     </form>
    

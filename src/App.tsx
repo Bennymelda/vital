@@ -8,6 +8,7 @@ import Home from './pages/home'
 import Navbar from './component/navbar'
 import About from './pages/about'
 import Features from './pages/features'
+import ScrollToHash from './component/ScrollToHash'
 
 function App() {
  
@@ -15,7 +16,7 @@ function App() {
   return (
   <BrowserRouter>
   <Navbar />
-  
+  <ScrollToHash />
     <Routes>
       <Route path="/" element={<Home />} />
       

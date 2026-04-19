@@ -4,11 +4,8 @@ import { sendContactMessage } from "../api/contact";
 
 import { MdOutlineCall, MdOutlineEmail } from "react-icons/md"
 import Footer from "../component/footer";
-
+import { Link } from "react-router-dom";
 import Notification from "./Notification";
-
-
-
 
 
 export default function ContactForm() {
@@ -235,7 +232,7 @@ className="bg-[#ffff] focus:border outline-0 focus:border-[#005bbf]  w-full px-2
   <section className="flex gap-4 flex-col text-center items-center mt-10 md:mt-20 bg-[#005bbf] mb-20 rounded-4xl px-4 py-10 md:py-15">
         <h2 className="text-2xl font-heading md:text-4xl font-heading text-white font-semibold">Ready to resume your journey?</h2>
         <p className="text-white md:w-[40%]">Start your journey today and experience a more intuitive way to manage your well-being.</p>
-        <button className="bg-white text-blue-700 font-semibold mt-4 px-8 py-4 rounded-4xl w-fit shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</button>
+        <Link to="/" className="bg-white text-blue-700 font-semibold mt-4 px-8 py-4 rounded-4xl w-fit shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</Link>
     </section>
  
     <Footer />

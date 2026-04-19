@@ -54,25 +54,25 @@ return (
 
 <nav className="hidden md:flex gap-6">
 
-<Link to="/" onClick={handleClick} className={linkStyle("/")}>
+<Link to="/" onClick={handleClick} className={`${linkStyle("/")} text-lg`}>
 
 Home
 
 </Link>
 
-<Link to="/about" onClick={handleClick} className={linkStyle("/about")}>
+<Link to="/about" onClick={handleClick} className={`${linkStyle("/about")} text-lg`}>
 
 About
 
 </Link>
 
-<Link to="/features" onClick={handleClick} className={linkStyle("/features")}>
+<Link to="/features" onClick={handleClick} className={`${linkStyle("/features")} text-lg`}>
 
 Features
 
 </Link>
 
-<Link to="/contact" onClick={handleClick} className={linkStyle("/contact")}>
+<Link to="/contact" onClick={handleClick} className={`${linkStyle("/contact")} text-lg`}>
 
 Contact
 
