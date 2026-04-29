@@ -8,7 +8,7 @@ import { PiBaby } from "react-icons/pi"
 import Form from "../components/form"
 import Footer from "../component/footer"
 import { BiSolidQuoteAltRight } from "react-icons/bi"
-import { FaBrain, FaHeart } from "react-icons/fa"; 
+// import { FaBrain, FaHeart } from "react-icons/fa"; 
 
 
 export default function Home(){
