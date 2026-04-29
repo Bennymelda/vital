@@ -35,7 +35,7 @@ export default function Features() {
                  </div>
                 </div>
                 <div className="md:w-1/2 ">
-                 <img src="/images/pregnant lady.png" className="w-full md:rounded-l-none md:rounded-r-none md:rounded-tr-4xl rounded-br-4xl rounded-bl-4xl md:rounded-br-4xl h-[500px] object-cover" alt="" />
+                 <img src="/images/new pregnancy.png" className="w-full md:rounded-l-none md:rounded-r-none md:rounded-tr-4xl rounded-br-4xl rounded-bl-4xl md:rounded-br-4xl h-[500px] object-cover" alt="" />
                 </div>
             </section>
 

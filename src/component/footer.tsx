@@ -1,5 +1,5 @@
 import { FaTwitter } from "react-icons/fa";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ export default function Footer(){
           
                 <img src="/images/logo1.png" alt="" className="w-25 mb-4 flex h-5 items-center object-cover"/>
 
-            <p className="text-gray-600 md:w-[80%]">Empowering health through empathetic AI. Providing accessible, data-driven healthcare management for families across the globe.</p>
+            <p className="text-gray-600 md:w-[80%]">Don’t miss what matters for your health. <br/>Providing accessible, data-driven healthcare management for individuals across the globe. </p>
         </div>
         <div  className="flex flex-col gap-5 mb-4 flex-1">
             <p className="font-bold text-xl text-gray-800">Navigations</p>
@@ -27,16 +27,26 @@ export default function Footer(){
             <div className="flex gap-2 items-center">
                 
                 <MdEmail />
-                <p className="text-gray-600" >care@vital.gmail.com</p>
+                <p className="text-gray-600" >vitals.supportemail@gmail.com</p>
             </div>
             
         </div>
         <div className="flex flex-col gap-5 flex-1">
             <p className="font-bold text-xl text-gray-800">Follow us on</p>
             <div className="flex items-center gap-5">
-                <FaTwitter className="text-[#005bbf] text-xl"/>
-                <FaInstagram className="text-[#005bbf] text-xl"/>
-                <FaLinkedin className="text-[#005bbf] text-xl" />
+                <a href="https://www.instagram.com/vi.ta.ls/" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="text-[#005bbf] text-xl hover:opacity-70 transition" />
+  </a>
+                <a href="https://www.tiktok.com/@vi.ta.ls" target="_blank" rel="noopener noreferrer">
+    <FaTiktok className="text-[#005bbf] text-xl hover:opacity-70 transition" />
+                    </a>
+                    <a href="https://linkedin.com/in/ " target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="text-[#005bbf] text-xl hover:opacity-70 transition" />
+                    </a>
+                    <a href="https://twitter.com/ " target="_blank" rel="noopener noreferrer">
+  <FaTwitter className="text-[#005bbf] text-xl hover:opacity-70 transition" />
+</a>
+                    
             </div>
         </div>
     </section>

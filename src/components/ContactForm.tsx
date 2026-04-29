@@ -202,7 +202,7 @@ className="bg-[#ffff] focus:border outline-0 focus:border-[#005bbf]  w-full px-2
         </div>
         
          </div>
-     <button type="submit" className="bg-[#005bbf] font-bold rounded-4xl text-white w-full lg:w-fit py-3 px-6 ">{loading ? "sending....." : "send message"}</button>
+     <button type="submit" className="bg-[#005bbf] font-bold rounded-4xl text-white w-full lg:w-fit py-3 px-6 ">{loading ? "sending....." : "Send message"}</button>
  
     </form>
     <div className="flex flex-col rounded-4xl w-full lg:w-[50%] p-6 gap-10  bg-slate-200">
@@ -224,13 +224,13 @@ className="bg-[#ffff] focus:border outline-0 focus:border-[#005bbf]  w-full px-2
             </div> 
            <div>
             <p className="font-semibold text-sm">General Support</p>
-            <p className="text-gray-700">care@vitals.health</p>
+            <p className="text-gray-700">vitals.supportemail@gmail.com</p>
            </div>
         </div>
     </div>
   </section>
   <section className="flex gap-4 flex-col text-center items-center mt-10 md:mt-20 bg-[#005bbf] mb-20 rounded-4xl px-4 py-10 md:py-15">
-        <h2 className="text-2xl font-heading md:text-4xl font-heading text-white font-semibold">Ready to resume your journey?</h2>
+        <h2 className="text-2xl font-heading md:text-4xl font-heading text-white font-semibold">Ready to start your journey?</h2>
         <p className="text-white md:w-[40%]">Start your journey today and experience a more intuitive way to manage your well-being.</p>
         <Link to="/" className="bg-white text-blue-700 font-semibold mt-4 px-8 py-4 rounded-4xl w-fit shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</Link>
     </section>

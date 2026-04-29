@@ -8,6 +8,8 @@ import { PiBaby } from "react-icons/pi"
 import Form from "../components/form"
 import Footer from "../component/footer"
 import { BiSolidQuoteAltRight } from "react-icons/bi"
+import { FaBrain, FaHeart } from "react-icons/fa"; 
+
 
 export default function Home(){
     
@@ -21,23 +23,23 @@ return(
 <header className="flex lg:flex-row flex-col lg:px-10 items-stretch justify-between pb-20  w-full gap-10 pt-20 px-5 bg-[#f4f9ff]">
 <div className="#f7f9ff flex flex-col flex-1 ">
     <p className="px-1 md:px-2 w-fit rounded tracking-wide text-sm inline-block mb-2 py-1 uppercase bg-[#c5deff] font-semibold">Integrated wellness platform</p>
-    <span className="text-4xl md:text-6xl font-bold font-heading">Your Health,</span>
-    <span className="text-4xl md:text-6xl font-bold font-heading">Your Journey,</span>
-    <span className="text-4xl md:text-6xl font-bold italic text-[#1A73E8] mb-4">Vitals.</span>
-    <p className="w-full md:text-xl md:w-[90%] text-gray-800 leading-7 tracking-wide">Vitals is the all-in-one health companion for general care and maternal wellness. Seamlessly manage your vitals, appointments, and family milestones in one secure place.</p>
-    <button className="bg-[#005bbf] mt-4 px-6 py-2 rounded-4xl w-fit text-white shadow-lg shadow-[#005bbf]/30 cursor-pointer" onClick={scrollToForm}>Join waitList</button>
+    <span className="text-4xl md:text-6xl font-bold font-heading">Have you checked,</span>
+    <span className="text-4xl md:text-6xl font-bold font-heading">your Vitals today?</span>
+    <span className="text-lg mt-2 md:text-xl font-bold italic text-[#1A73E8] mb-4">Don’t Miss What Matters for Your Health.</span>
+    <p className="w-full md:text-xl md:w-[90%] text-gray-800 leading-7 tracking-wide">Vitals helps you stay on track with medications, appointments, and care all in one place.</p>
+    <button className="bg-[#005bbf] mt-4 px-6 py-2 rounded-4xl w-fit text-white shadow-lg shadow-[#005bbf]/30 cursor-pointer" onClick={scrollToForm}>Join the Waitlist</button>
     <div className="flex items-center gap-5 mt-10">
         <div className="flex ">
-            <img src="/images/baby 3.png" className="w-8  h-8 rounded-full" alt="" />
-            <img src="/images/baby 4.png" className="w-8 -ml-2 h-8 rounded-full"  alt="" />
-            <img src="/images/baby 5.png" className="w-8 -ml-2 h-8 rounded-full" alt="" />
+            <img src="/images/new girl 1.png" className="w-8  h-8 rounded-full" alt="" />
+            <img src="/images/new boy 1.png" className="w-8 -ml-2 h-8 rounded-full"  alt="" />
+            <img src="/images/new girl 2.png" className="w-8 -ml-2 h-8 rounded-full" alt="" />
         </div>
-        <p><strong>50K+</strong>active users trust vitals</p>
+        <p><strong>5K+</strong>active users trust Vitals</p>
     </div>
 </div>
 <div className="relative ">
     <div className="">
-        <img src="/images/baby 2.png" className="rounded-4xl w-full " alt="Doctor image" />
+        <img src="/images/new doctor.png" className="rounded-4xl w-120 h-120 w-full " alt="Doctor image" />
     </div>
     <div className="bg-white rounded-2xl px-4 py-4 absolute bottom-0 left-0 w-[60%] shadow-2xl">
         <div className="flex justify-between mb-4">
@@ -56,10 +58,62 @@ return(
     </div>
 </div>
 </header>
+
+        <section className="px-3 sm:px-5 lg:px-8 py-20 bg-[#eaf3ff]">
+
+  <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-sm p-6 md:p-12">
+
+    <div className="flex flex-col md:flex-row">
+
+      {/* Left Column */}
+      <div className="flex-1 md:pr-10">
+
+        <div className="flex items-center gap-2 mb-3">
+          <GiBrain className="text-[#005bbf] text-xl" />
+          <h2 className="text-xl md:text-2xl font-bold">
+            We Know You Truly Care
+          </h2>
+        </div>
+
+        <div className="h-1 w-12 bg-[#005bbf] mb-4 rounded-full"></div>
+
+        <p className="text-gray-700 text-base md:text-base leading-7">
+          But you’re just managing too much at once. <br/> Medications, appointments, bodily changes, and daily routines all compete for your attention. <br/>It’s easy for things to slip through the cracks.
+        </p>
+
+      </div>
+
+      {/* Divider */}
+      <div className="hidden md:block w-px bg-gray-200"></div>
+
+      {/* Right Column */}
+      <div className="flex-1 md:pl-10 mt-10 md:mt-0">
+
+        <div className="flex items-center gap-2 mb-3">
+          <PiBaby className="text-[#005bbf] text-xl" />
+          <h2 className="text-xl md:text-2xl font-bold">
+            Specialized for Mums
+          </h2>
+        </div>
+
+        <div className="h-1 w-12 bg-[#005bbf] mb-4 rounded-full"></div>
+
+        <p className="text-gray-700 text-base md:text-base leading-7">
+          We have combined world-class medical management with specialized maternal care to create the most comprehensive health app available.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <section className="bg-[#f0f3f8] lg:px-10 pb-15  md:pb-10 px-5">
     <div>
-        <h2 className="font-heading font-bold tracking-wide text-2xl md:text-4xl pt-10 md:pt-20">Expertly Designed by Vitals</h2>
-        <p className="text-gray-800 md:w-[65%] lg:w-[70%] w-full md:mb-10 mt-2 mb-6">We've combined world-class medical management with specialized maternal care to create the most comprehensive health app available.</p>
+                <h4 className="font-heading font-bold tracking-wide text-1xl md:text-2xl pt-10 md:pt-20">What does Vitals do?</h4>
+
     </div>
     <div className="flex gap-10 justify-between flex-col md:flex-row">
         <div className="flex flex-col gap-5">
@@ -78,8 +132,8 @@ return(
                 <div className="bg-[#e9f2fd]  rounded-xl inline-block p-3 mb-2">
                     <FaRegCalendarAlt className="text-[#266fc9] text-2xl"/>
                 </div>
-                <p className="mb-4 font-semibold text-lg md:text-xl" >Appointments</p>
-                <p className="text-gray-800 text-sm md:text-md">Unified booking and telehealth integration across your provider network.</p>
+                <p className="mb-4 font-semibold text-lg md:text-xl" >AI Assisted Symptom Logging and History</p>
+                <p className="text-gray-800 text-sm md:text-md">Understand your health patterns with intelligent symptom tracking and easy access to your medical history.</p>
             </div>
         </div>
 
@@ -115,8 +169,8 @@ return(
                 <div className="bg-[#e9f2fd]  rounded-xl inline-block p-3 mb-2">
                     <GiBrain className="text-[#266fc9] text-2xl" />
                 </div>
-                <p className="mb-4 font-semibold text-lg md:text-xl">AI Gudiance</p>
-                <p className="text-gray-800 text-sm md:text-md">Instant 24/7 answers via Vitals' clinical-grade AI platform.</p>
+                <p className="mb-4 font-semibold text-lg md:text-xl">Medicine Upload and Info</p>
+                <p className="text-gray-800 text-sm md:text-md">Instantly upload your medications to get clear, detailed information and more guidance.</p>
             </div>
             <div className="bg-[#ffffff] rounded-4xl shadow-lg p-6">
                 <div className="bg-[#f5e7de] rounded-xl inline-block p-3 mb-2">
@@ -141,8 +195,8 @@ return(
             <p className="font-bold text-2xl md:text-4xl mb-5 mt-4">Baby Profile</p>
             <p className="text-gray-800 text-md">Capture every moment and metric with Vitals from birth through childhood. Log sleep cycles, feedings, and growth spurts while keeping a digital health record that travels with you.</p>
         </div>
-        <div className="w-full md:w-1/2 flex">
-            <img src="/images/baby.png" className="w-full rounded-2xl md:rounded-4xl" alt="" />
+        <div className="w-full md:w-1/2 flex justify-center">
+            <img src="/images/new baby.png" className=" w-1/2 rounded-sm md:rounded-lg" alt="" />
         </div>   
     </div>
     
@@ -162,9 +216,9 @@ return(
             <div>
                 <p className="italic leading-7 tracking-tighter">"The pregnancy timeline features on Vitals were a lifesaver. Being able to track my baby's development and my own vitals in one app made me feel so much more in control."</p>
                 <div className="flex items-center gap-2 mt-5">
-                    <img src="/images/baby 6.png" className="w-10 h-10 rounded-full" alt="" />
+                    <img src="/images/new girl 3.png" className="w-10 h-10 rounded-full" alt="" />
                     <div className="flex flex-col">
-                        <span className="tracking-wide font-bold">Elena Rodriguez</span>
+                        <span className="tracking-wide font-bold">Amara</span>
                         <span className="text-sm text-gray-700">Mother of two</span>
                     </div>
                 </div>
@@ -177,10 +231,10 @@ return(
                 <div>
                     <p className="italic leading-7 tracking-tighter">"I use the medication management feature for my elderly parents. Vitals is the only way I can keep their complex schedules straight and ensure they never miss a dose."</p>
                     <div className="flex items-center gap-2 mt-5">
-                        <img src="/images/baby 7.png" className="w-10 h-10 rounded-full" alt="" />
+                        <img src="/images/new boy 2.png" className="w-10 h-10 rounded-full" alt="" />
                         <div className="flex flex-col">
-                            <p className="tracking-wide font-bold">David Chen</p>
-                            <p className="text-sm text-gray-700">Caregiver & Advocate</p>
+                            <p className="tracking-wide font-bold">David</p>
+                            <p className="text-sm text-gray-700">Advocate</p>
                         </div>
                     </div>
                 </div>
@@ -193,12 +247,12 @@ return(
                 <BiSolidQuoteAltRight className="text-white text-center" />
             </div>
             <div>
-                <p  className="italic leading-7 tracking-tighter">"The Vitals guidance helped me through a late-night panic when my toddler had a fever. It gave me the calm, accurate steps I needed until our pediatrician opened."</p>
+                <p  className="italic leading-7 tracking-tighter">“There’s just so much to remember during pregnancy… Vitals made it feel manageable.” </p>
                 <div className="flex items-center gap-2 mt-5">
-                    <img src="/images/baby 8.png" className="w-10 h-10 rounded-full"  alt="" />
+                    <img src="/images/new girl 4.png" className="w-10 h-10 rounded-full"  alt="" />
                     <div className="flex flex-col">
-                        <p className="tracking-wide font-bold">Sarah Jenkins</p>
-                        <p className="text-sm text-gray-700">New Parent</p>
+                        <p className="tracking-wide font-bold">Anita</p>
+                        <p className="text-sm text-gray-700">Banker</p>
                     </div>
                 </div>
             </div>

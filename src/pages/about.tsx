@@ -11,7 +11,8 @@ export default function About(){
     <div className=" bg-[#f4f9ff] flex flex-col md:w-full  md:flex-row md:justify-between md:items-center gap-10">
         <div className="flex flex-col gap-4 md:w-1/2">
             <h1 className="font-semibold text-4xl md:text-6xl lg:text-7xl font-heading">About Vitals</h1>
-            <p className="text-gray-800 md:text-lg lg:w-[70%]">Unified health tracking designed for every stage of life. From <strong className="text-[#1A73E8]">General Care</strong> to specialized <strong className="text-amber-700">Mother & Baby </strong>support.</p>
+            <p className="text-gray-800 md:text-lg lg:w-[70%]">Vitals makes sure you don’t miss what matters for your health. From <strong className="text-[#1A73E8]">General Care</strong> to specialized <strong className="text-amber-700">Mother & Baby </strong>support, our unified health tracking is thoughtfully designed for every stage of life.
+</p>
             <div className="flex gap-1 md:gap-4 flex-col lg:flex-row">
                 <Link to="/"  className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 md:px-8 md:py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join WaitList</Link>
                 <Link to="/features"  className="bg-gray-300 font-semibold mt-2 md:mt-4 md:px-8 md:py-4 px-8 py-4 rounded-4xl w-fit text-black shadow-md shadow-gray-300/30 cursor-pointer">Explore Features</Link>
@@ -35,7 +36,7 @@ export default function About(){
                <FaEye className="text-2xl text-white" />
             </div>
             
-            <p className="text-2xl font-heading mb-4 font-semibold font-heading">Our Vission</p>
+            <p className="text-2xl font-heading mb-4 font-semibold font-heading">Our Vision</p>
             <p className="text-gray-800 md:text-lg ">A world where accessible, simple, and AI-supported guidance is available to everyone. We are particularly committed to supporting mothers through their journey, providing specialized tracking that evolves as their baby grows.</p>
         </div>
     </section >
@@ -46,7 +47,7 @@ export default function About(){
             
             <div className="text-center">
                 <h1 className="text-2xl font-heading tracking-wide font-semibold mb-2 md:text-4xl">How It Helps You</h1>
-              <p className="text-gray-700 text-sm md:text-lg">Modern health management simplified through thoughtful technology.</p>
+              <p className="text-gray-700 text-sm md:text-lg">Modern health management simplified through technology.</p>
             </div>
             <div className="grid gap-5 grid-cols-1 mb-20 mt-10 md:grid-cols-2" >
         <div className="bg-[#ffffff] rounded-2xl py-8 px-6 shadow-lg">
@@ -57,12 +58,12 @@ export default function About(){
         <div className="bg-[#ffffff] rounded-2xl py-8 px-6 shadow-lg">
             <MdOutlineNotificationsActive className="text-[#266fc9] mb-4 text-2xl" />
             <p className="mb-4 font-semibold text-lg md:text-xl">Smart Reminders</p>
-            <p className="text-gray-800 text-md md:text-lg">Context-aware notifications that nudge you toward healthier habits throughout the day.</p>
+            <p className="text-gray-800 text-md md:text-lg">Personalized notifications that nudge you toward healthier habits throughout the day.</p>
         </div>
         <div className="bg-[#ffffff] rounded-2xl  py-8 px-6 shadow-lg">
             <PiBaby className="text-amber-700 mb-4 text- text-2xl " />
             <p className="mb-4 font-semibold text-lg md:text-xl">Mother & Baby Tracking</p>
-            <p className="text-gray-800 text-md md:text-lg">Specialized milestones, nursing logs, and growth charts tailored for new parents.</p>
+            <p className="text-gray-800 text-md md:text-lg">Specialized milestones, nursing logs, and growth charts tailored for parents.</p>
         </div>
         <div className="bg-[#ffffff] rounded-2xl  py-8 px-6 shadow-lg">
             <GiBrain className="text-[#266fc9] mb-4 text-2xl" />
@@ -93,7 +94,7 @@ export default function About(){
              </div>
     </section>
     <section className="flex gap-4 flex-col text-center items-center bg-[#d7e4fa] mb-20 rounded-4xl px-4 py-20">
-        <h2 className="text-2xl font-heading md:text-4xl font-semibold">Ready to join the health revolution?</h2>
+        <h2 className="text-2xl font-heading md:text-4xl font-semibold">Ready to try Vitals ?</h2>
         <p className="text-gray-800 md:w-[40%]">Start your journey today and experience a more intuitive way to manage your well-being.</p>
         <Link to="/" className="bg-[#005bbf] font-semibold mt-4 px-8 py-4 rounded-4xl w-fit text-white shadow-md shadow-[#005bbf]/30 cursor-pointer">Join Waitlist</Link>
     </section>

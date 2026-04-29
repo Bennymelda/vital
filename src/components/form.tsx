@@ -189,7 +189,7 @@ checked={marketingConsent}
 onChange={(e) => setMarketingConsent(e.target.checked)}
 
 />
-<span className="text-gray-700">I agree to marketing emails</span>
+<span className="text-gray-700">I agree to receive updates by email.</span>
 
 
 </label>
