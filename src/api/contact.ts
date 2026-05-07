@@ -2,7 +2,7 @@ import type { ContactData } from "../types";
 
 export const sendContactMessage = async (data: ContactData) => {
 
-const response = await fetch("https://vitals-api-service.fly.dev/api/contact", {
+const response = await fetch("https://vitals-api-service.onrender.com/api/contact", {
 
 method: "POST",
 
